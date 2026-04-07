@@ -1,0 +1,270 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Industrial Design Bootcamp</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "tertiary": "#0062a1",
+                    "on-tertiary-fixed": "#001d35",
+                    "on-primary-fixed": "#360f00",
+                    "on-error-container": "#93000a",
+                    "outline": "#8e7164",
+                    "on-tertiary-fixed-variant": "#00497b",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#5a4136",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#f8ddd2",
+                    "inverse-primary": "#ffb596",
+                    "inverse-surface": "#3d2d26",
+                    "secondary-fixed": "#d5e3ff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#ffb596",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#9ccaff",
+                    "tertiary-fixed": "#d0e4ff",
+                    "surface-container-high": "#fee2d8",
+                    "surface-container-low": "#fff1ec",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#294f83",
+                    "background": "#fff8f6",
+                    "outline-variant": "#e3bfb1",
+                    "on-background": "#261812",
+                    "surface-container": "#ffe9e1",
+                    "primary-container": "#ff6600",
+                    "surface-variant": "#f8ddd2",
+                    "surface-tint": "#a33e00",
+                    "on-secondary-fixed-variant": "#1f477b",
+                    "secondary": "#3a5f94",
+                    "surface": "#fff8f6",
+                    "secondary-fixed-dim": "#a7c8ff",
+                    "surface-dim": "#f0d4ca",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#001b3c",
+                    "tertiary-container": "#009cfc",
+                    "surface-bright": "#fff8f6",
+                    "inverse-on-surface": "#ffede7",
+                    "on-tertiary-container": "#003155",
+                    "primary-fixed": "#ffdbcd",
+                    "on-primary-fixed-variant": "#7c2e00",
+                    "secondary-container": "#9fc2fe",
+                    "on-surface": "#261812",
+                    "on-primary-container": "#561d00",
+                    "primary": "#a33e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #a33e00 0%, #ff6600 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8f6] dark:bg-stone-950 backdrop-blur-md bg-opacity-80">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<div class="text-2xl font-black text-[#a33e00] dark:text-[#ff6600] tracking-tighter font-headline" style="">Industrial Design</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#a33e00] dark:text-[#ff6600] border-b-2 border-[#a33e00] pb-1 font-headline font-bold tracking-tight hover:translate-y-[-2px] transition-transform duration-200" href="#" style="">Horario</a>
+<a class="text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] font-headline font-bold tracking-tight hover:translate-y-[-2px] transition-transform duration-200" href="#" style="">Contacto</a>
+<button class="kinetic-gradient text-white px-6 py-2.5 rounded-xl font-headline font-bold scale-95 duration-100 active:opacity-80 hover:translate-y-[-2px] transition-transform shadow-lg shadow-on-primary-container/10" style="">
+                Regístrate Ahora
+            </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl" style="">menu</span>
+</div>
+</div>
+<div class="bg-gradient-to-b from-[#ffe9e1] to-transparent h-1 w-full"></div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden bg-surface">
+<!-- Decorative Elements -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full scale-150 rotate-12" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,200 Q100,50 200,200 T400,200" fill="none" stroke="#a33e00" stroke-width="2"></path>
+<path d="M0,250 Q100,100 200,250 T400,250" fill="none" stroke="#ff6600" stroke-width="1"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label font-bold text-sm mb-6" style="">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">workspace_premium</span>
+                    BOOTCAMP CERTIFICADO POR ANÁHUAC
+                </div>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-on-background tracking-tighter leading-[1.1] mb-6" style="">Conoce y aprende sobre la carrera de&nbsp;<span class="text-primary italic" style="">diseño industrial</span> en 3 días</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed" style="">Si te consideras una persona creativa, con interés en&nbsp; desarrollar tus habilidades visuales, conceptuales y tecnológicas. Este workshop es para ti.&nbsp;</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="kinetic-gradient text-white px-8 py-5 rounded-xl font-headline text-lg font-bold hover:translate-y-[-2px] transition-all shadow-xl shadow-on-primary-container/20 active:scale-95" style="">
+                        Únete al Bootcamp
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-5 rounded-xl font-headline text-lg font-bold hover:bg-surface-variant transition-colors active:scale-95" style="">
+                        Descargar Temario
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-4 relative">
+<div class="aspect-square bg-surface-container rounded-3xl overflow-hidden shadow-2xl relative">
+<img alt="Colaboración en el Bootcamp de Diseño" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="Modern collaborative university classroom with students focused on digital design workstations with warm sunset lighting filtering through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Lg4IIx2O7W8NIX2udie2KgDPk5ArVHvRcJ3K8kx_1NRe7rVjkhLURGEfJOvAuLmfzvJ8HZ35bMVvqMsky7xSC98SdnLXM32R31Xg9COcGsEvl_OjC0yFjz90x1Y2uuvrqdlBWOULX-9i9CAIC2j6ffXfbzPUcYBpZSjTJaFSeK3pO_Ngu7E9GHTTi-T_xZjMoEkZ5nhZxljiwsIY0WPd7C99ePK7nEvnsWVXd_mwJiSjVyn3i1Pp6jUOB-d0FwgAFSyrsoOUZiYb" style="">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+</div>
+<!-- Stats Overlays -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border-l-4 border-primary">
+<p class="text-3xl font-headline font-black text-primary" style="">350+</p>
+<p class="text-xs font-label font-bold text-on-surface-variant tracking-widest uppercase" style="">Graduados</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features/Benefits: Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-extrabold text-on-background tracking-tight mb-4" style="">Diseñado para la comunidad pre-universitaria</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto" style="">Este workshop se enfoca en el "Aprender Haciendo" o <i>Hands-on.&nbsp;</i><br>Aquí tu aprenderas las herramientas conceptuales y tecnológicas necesarias para plasmar tus ideas en nuevos&nbsp; productos&nbsp;</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Speed -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300">
+<div class="w-14 h-14 kinetic-gradient rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">bolt</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-background mb-4" style="">Velocidad</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Aprenderás de prototipado rápido para construir modelos físicos de manera eficiente&nbsp;</p>
+</div>
+<!-- Precision -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300">
+<div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-secondary/20">
+<span class="material-symbols-outlined text-white text-3xl" style="">target</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-background mb-4" style="">Conceptualización</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Desarrollarás habilidades ténicas y conceptuales con las cuales&nbsp; podrás definir un proyecto de diseño desde ideación hasta su prototipado</p>
+</div>
+<!-- User Experience -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300">
+<div class="w-14 h-14 kinetic-gradient rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-3xl" style="">psychology</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-background mb-4" style="">Experiencia de Usuario</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Definirás los elementos necesarios que tu propuesta requiere para cumplir las expectativas del usuario.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Affiliates -->
+<section class="py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="text-3xl font-headline font-extrabold text-on-background mb-6" style="">Respaldado por los Gigantes del Diseño</h2>
+<p class="text-on-surface-variant italic border-l-4 border-primary pl-6" style="">"La metodología de SPRINT ha transformado cómo los equipos de diseño de producto abordan el desarrollo de prototipos. Es el estándar de oro para el diseño actual."</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-8 opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="h-12 w-32 flex items-center justify-center bg-surface-container font-black tracking-tighter text-on-surface text-xl" style="">Frog Design</div>
+<div class="h-12 w-32 flex items-center justify-center bg-surface-container font-black tracking-tighter text-on-surface text-xl" style="">Pentagram</div>
+<div class="h-12 w-32 flex items-center justify-center bg-surface-container font-black tracking-tighter text-on-surface text-xl" style="">IDEO</div>
+<div class="h-12 w-32 flex items-center justify-center bg-surface-container font-black tracking-tighter text-on-surface text-xl" style="">Fast Co.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Progress Timeline (Contextual Component) -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="text-3xl font-headline font-extrabold text-center mb-16" style="">Tu workshop en 3 Días</h2>
+<div class="relative">
+<div class="absolute left-1/2 -translate-x-1/2 h-full w-2 bg-surface-container-high rounded-full"></div>
+<div class="space-y-24 relative">
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-12 text-center md:text-right">
+<h4 class="text-xl font-bold text-primary mb-2" style="">Día 01: Fundamentos</h4>
+<p class="text-sm text-on-surface-variant" style=""><span style="color: rgb(38, 24, 18); font-size: medium;">Qué es Diseño</span></p><div class="" style="">Qué hace el diseño industrial</div><p class="" style=""></p>
+</div>
+<div class="w-6 h-6 bg-primary rounded-full border-4 border-surface-container z-10"></div>
+<div class="md:w-1/2 md:pl-12"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2"></div>
+<div class="w-6 h-6 bg-secondary rounded-full border-4 border-surface-container z-10"></div>
+<div class="md:w-1/2 md:pl-12 text-center md:text-left">
+<h4 class="text-xl font-bold text-secondary mb-2" style="">Día 02: Ejecución</h4>
+<p class="text-sm text-on-surface-variant" style="">Construcción de Prototipos Cinéticos de Alta Fidelidad</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-12 text-center md:text-right">
+<h4 class="text-xl font-bold text-primary mb-2" style="">Día 03: Validación</h4>
+<p class="text-sm text-on-surface-variant" style="">Pruebas A/B y Revisión Editorial Final</p>
+</div>
+<div class="w-6 h-6 bg-primary rounded-full border-4 border-surface-container z-10"></div>
+<div class="md:w-1/2 md:pl-12"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 relative">
+<div class="max-w-5xl mx-auto px-8">
+<div class="bg-on-background rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-20 blur-[100px]"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary opacity-20 blur-[100px]"></div>
+<h2 class="text-4xl md:text-5xl font-headline font-black text-white mb-8 relative z-10 leading-tight" style="">¿Listo para el reto?</h2>
+<p class="text-stone-400 text-lg mb-12 max-w-2xl mx-auto relative z-10" style="">
+                    Cupos limitados. Certificación incluida al completar con éxito.
+                </p>
+<div class="relative z-10">
+<button class="kinetic-gradient text-white px-10 py-5 rounded-xl font-headline text-xl font-bold hover:scale-105 transition-transform shadow-2xl shadow-primary/20" style="">
+                        Regístrate AQUÍ</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-16 bg-[#ffe9e1] dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-bold text-[#261812] dark:text-stone-100 font-headline" style="">Industrial Design</div>
+<p class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 max-w-xs" style="">
+                © 2026 Fast Forms Bootcamp. <br>Escuela de Arquitectura y Diseño<br>Universidad Anáhuac Puebla<div><br></div></p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Política de Privacidad</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Términos de Servicio</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Profesores</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Exalumnos</a>
+</div>
+</div>
+</footer>
+</body></html>

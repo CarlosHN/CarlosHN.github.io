@@ -1,0 +1,246 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "tertiary": "#0062a1",
+                        "on-tertiary-fixed": "#001d35",
+                        "on-primary-fixed": "#360f00",
+                        "on-error-container": "#93000a",
+                        "outline": "#8e7164",
+                        "on-tertiary-fixed-variant": "#00497b",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#5a4136",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#f8ddd2",
+                        "inverse-primary": "#ffb596",
+                        "inverse-surface": "#3d2d26",
+                        "secondary-fixed": "#d5e3ff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb596",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#9ccaff",
+                        "tertiary-fixed": "#d0e4ff",
+                        "surface-container-high": "#fee2d8",
+                        "surface-container-low": "#fff1ec",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#294f83",
+                        "background": "#fff8f6",
+                        "outline-variant": "#e3bfb1",
+                        "on-background": "#261812",
+                        "surface-container": "#ffe9e1",
+                        "primary-container": "#ff6600",
+                        "surface-variant": "#f8ddd2",
+                        "surface-tint": "#a33e00",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "secondary": "#3a5f94",
+                        "surface": "#fff8f6",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "surface-dim": "#f0d4ca",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001b3c",
+                        "tertiary-container": "#009cfc",
+                        "surface-bright": "#fff8f6",
+                        "inverse-on-surface": "#ffede7",
+                        "on-tertiary-container": "#003155",
+                        "primary-fixed": "#ffdbcd",
+                        "on-primary-fixed-variant": "#7c2e00",
+                        "secondary-container": "#9fc2fe",
+                        "on-surface": "#261812",
+                        "on-primary-container": "#561d00",
+                        "primary": "#a33e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(86, 29, 0, 0.08);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8f6] dark:bg-stone-950 backdrop-blur-md bg-opacity-80">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#a33e00] dark:text-[#ff6600] tracking-tighter font-headline" style="">
+                Fast Forms
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold tracking-tight text-[#a33e00] dark:text-[#ff6600] border-b-2 border-[#a33e00] pb-1 hover:translate-y-[-2px] transition-transform duration-200" href="#" style="">Cronograma</a>
+<a class="font-headline font-bold tracking-tight text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] hover:translate-y-[-2px] transition-transform duration-200" href="#" style="">Contacto</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm scale-95 duration-100 active:opacity-80 hover:translate-y-[-2px] transition-transform" style="">
+                    Regístrate Ahora
+                </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer" style="">menu</span>
+</div>
+</div>
+<div class="bg-gradient-to-b from-[#ffe9e1] to-transparent h-1"></div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-16 md:mb-24">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-surface-container-high text-primary mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">calendar_today</span>
+<span class="text-xs font-bold uppercase tracking-widest font-label" style="">Intensivo de 3 Días</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-background leading-[1.1] tracking-tight mb-8" style=""><span class="text-primary italic" style="">Cronograma&nbsp;</span><span style="font-size: 4.5rem; letter-spacing: -0.05em;">del Bootcamp.<br>&nbsp;Tres días</span><span style="font-size: 4.5rem; letter-spacing: -0.025em;">&nbsp;</span><br></h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl font-medium leading-relaxed" style="">
+                Conoce de punta a punta todo el proceso de diseño.<br>Inicia&nbsp;</p>
+</header>
+<!-- Timeline Tabs Interaction Simulation (Visual Only) -->
+<div class="flex flex-col md:flex-row gap-8 mb-12">
+<div class="flex md:flex-col gap-2 overflow-x-auto no-scrollbar pb-4 md:pb-0 md:w-48 shrink-0">
+<button class="flex flex-col items-start p-4 rounded-xl bg-primary text-on-primary min-w-[140px] transition-all editorial-shadow" style="">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80" style="">Día 01</span>
+<span class="text-xl font-bold font-headline" style="">Fundamentos</span>
+</button>
+<button class="flex flex-col items-start p-4 rounded-xl bg-surface-container-low text-on-surface-variant min-w-[140px] hover:bg-surface-container-high transition-all" style="">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em]" style="">Día 02</span>
+<span class="text-xl font-bold font-headline" style="">Producción</span>
+</button>
+<button class="flex flex-col items-start p-4 rounded-xl bg-surface-container-low text-on-surface-variant min-w-[140px] hover:bg-surface-container-high transition-all" style="">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em]" style="">Día 03</span>
+<span class="text-xl font-bold font-headline" style="">Optimización</span>
+</button>
+</div>
+<div class="flex-grow space-y-4">
+<!-- Day 1 Schedule Cards -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Morning Session -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-8 editorial-shadow transition-all hover:translate-y-[-4px] overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary opacity-5 -mr-16 -mt-16 rounded-full"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-32 shrink-0">
+<span class="block font-headline font-extrabold text-2xl text-secondary" style="">10:00</span>
+<span class="block text-sm font-bold text-on-surface-variant opacity-60" style="">AM</span>
+<div class="w-full h-[2px] bg-secondary-container mt-2"></div>
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-black uppercase tracking-wider" style="">Conferencia</span>
+<span class="text-on-surface-variant text-sm font-semibold" style="">90 Minutos</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-background mb-4" style="">Principios Básicos de Formularios</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-xl mb-6" style="">
+                                    Explorando la psicología de la entrada de datos y la jerarquía visual necesaria para interfaces de baja fricción. Comenzamos con el elemento humano.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Mid Day Session -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-8 editorial-shadow transition-all hover:translate-y-[-4px] overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary opacity-5 -mr-16 -mt-16 rounded-full"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-32 shrink-0">
+<span class="block font-headline font-extrabold text-2xl text-primary" style="">11:30</span>
+<span class="block text-sm font-bold text-on-surface-variant opacity-60" style="">AM</span>
+<div class="w-full h-[2px] bg-primary-container mt-2"></div>
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-0.5 rounded-full bg-primary-container text-on-primary-container text-[10px] font-black uppercase tracking-wider" style="">Taller</span>
+<span class="text-on-surface-variant text-sm font-semibold" style="">90 Minutos</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-background mb-4" style="">Construyendo con Velocidad</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-xl mb-6" style="">
+                                    Sesión práctica utilizando el Kit de Diseño de Fast Forms. Aprende a prototipar flujos de varios pasos en menos de 20 minutos.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Afternoon Session -->
+<div class="group relative bg-surface-container rounded-2xl p-8 transition-all hover:translate-y-[-4px] overflow-hidden border-2 border-primary-container/20">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-32 shrink-0">
+<span class="block font-headline font-extrabold text-2xl text-on-background" style="">01:00</span>
+<span class="block text-sm font-bold text-on-surface-variant opacity-60" style="">PM</span>
+<div class="w-full h-[2px] bg-outline-variant mt-2"></div>
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-black uppercase tracking-wider" style="">Tecnología Avanzada</span>
+<span class="text-on-surface-variant text-sm font-semibold" style="">60 Minutos</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-background mb-4" style="">UX Avanzado para Formularios</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-xl mb-6" style="">
+                                    Microinteracciones, máscaras de campo y validación predictiva. Técnicas que transforman un "formulario" en una experiencia conversacional.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Overview -->
+<section class="mt-24 p-8 rounded-3xl bg-surface-container-low border border-outline-variant/10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-md">
+<h4 class="text-2xl font-headline font-extrabold text-on-background mb-2" style="">Progreso del Bootcamp</h4>
+<p class="text-on-surface-variant text-sm font-medium" style="">Tu progreso a través del currículo intensivo de 3 días.</p>
+</div>
+<div class="flex-grow max-w-xl w-full">
+<div class="flex justify-between mb-3 text-[10px] font-black uppercase tracking-widest text-primary">
+<span class="" style="">Registro Abierto</span>
+<span class="" style="">Enfoque Día 01</span>
+</div>
+<div class="h-4 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-1/3 bg-primary relative">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#ffe9e1] dark:bg-stone-900 w-full py-12 mt-16">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="text-lg font-bold text-[#261812] dark:text-stone-100 font-headline" style="">
+                Fast Forms <span class="font-normal opacity-50" style="">| Bootcamp de Diseño</span>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Política de Privacidad</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Términos de Servicio</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Profesorado</a>
+<a class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 hover:text-[#a33e00] transition-colors" href="#" style="">Exalumnos</a>
+</div>
+<p class="font-['Manrope'] text-sm text-[#5a4136] dark:text-stone-400 text-center md:text-right opacity-80" style="">
+                © 2024 Fast Forms Design Bootcamp. Afiliado de The Modern Academy.
+            </p>
+</div>
+</footer>
+</body></html>
